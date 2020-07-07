@@ -1,0 +1,237 @@
+* {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family : 'Calistoga',
+                cursive;
+}
+
+body {
+  font-family : 'Roboto',
+                sans-serif;
+}
+
+.container {
+  max-width : 1400px;
+  margin    : auto;
+}
+
+/* *********** HEADER *************** */
+
+header {
+  display          : flex;
+  padding          : 10px 0;
+  color            : white;
+  background-color : #181e2c;
+  align-items      : center;
+  justify-content  : space-around;
+}
+
+header ul {
+  display         : flex;
+  width           : 30%;
+  justify-content : space-around;
+}
+
+header ul li {
+  margin-right : 10px;
+  list-style   : none;
+}
+
+header ul li a {
+  color           : white;
+  text-decoration : none;
+  transition      : 0.5s all ease;
+}
+
+header ul li a:hover {
+  color : #f53b57;
+}
+
+/* ********** HEADING IMAGE *************** */
+
+.heading-image {
+  display             : flex;
+  height              : 460px;
+  color               : white;
+  background-image    : linear-gradient(
+                          rgba(0, 0, 0, 0.8),
+                          rgba(0, 0, 0, 0.8)
+                        ),
+                        url(
+                          'img/2.jpg'
+                        );
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : cover;
+  align-items         : center;
+  flex-direction      : column;
+  justify-content     : center;
+  background-attachment: fixed;
+}
+
+.heading-image h1 {
+  margin-bottom : 10px;
+  text-shadow   : 5px 5px 5px #000;
+  font-size     : 3.5rem;
+  font-weight   : lighter;
+}
+
+.heading-image p {
+  font-style  : italic;
+  font-weight : lighter;
+}
+
+/* **************** ABOUT ME ************** */
+
+.about-me {
+  display        : flex;
+  padding        : 5% 3%;
+  text-align     : center;
+  flex-direction : column;
+}
+
+.about-me img {
+  filter     : grayscale(100);
+  transition : 0.6s;
+  border:4px solid transparent;
+}
+
+.about-me img:hover {
+  border-radius : 50%;
+  filter        : none;
+  border: 4px solid  #f53b57;
+}
+
+.about-me h1 {
+  margin : 20px 0;
+}
+
+.about-me h1:nth-child(3) {
+  color : #f53b57;
+}
+
+.icons {
+  display         : flex;
+  margin-top      : 40px;
+  flex-wrap       : wrap;
+  justify-content : space-between;
+}
+
+.icon {
+  width  : 400px;
+  margin : 20px auto;
+}
+
+.icon h3 {
+  margin    : 20px 0;
+  font-size : 1.3rem;
+}
+
+.icon i {
+  color     : #f53b57;
+  font-size : 80px;
+}
+
+/********* GALLERY*******/
+.gallery{
+  background-color:#181e2c;
+  color:white;
+  text-align:center;
+  padding:4%;
+}
+.gallery h1{
+  margin-bottom:2%;
+  letter-spacing: 3px;
+  font-size:2rem;
+}
+
+.photos img{
+  width:400px;
+  margin:5px;
+}
+
+.photos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+/********** CONTACT ***************/
+
+.contact{
+  background-color: #f53b57;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  color:white;
+  padding:3% 0;
+  overflow: hidden;
+}
+form{
+  max-width:80%;
+  margin:auto;
+}
+
+.contact h1{
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-size: 2rem;
+}
+
+.contact input,.contact textarea{
+  display: block;
+  width:100%;
+  margin:10px;
+  font-size: 16px;
+  margin:10px auto;
+}
+
+.contact textarea{
+   resize: none;
+}
+
+input:focus, textarea:focus {
+    background-color: #181e2c;
+    color: #e5ebf8;
+}
+
+form button{
+  background-color: #f53b57;
+	color: #e5ebf8;
+	letter-spacing: 2px;
+	padding: 8px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+    border: 2px solid #e5ebf8;
+    font-size: 20px;
+    width:100%;
+}
+
+form button:hover{
+  background-color: #e5ebf8;
+	color: #f53b57;
+    transform: scale(0.95);
+}
+
+
+
+
+/*********** FOOTER ************/
+footer{
+  background-color:#181e2c;
+  color:white;
+  padding:1%;
+  text-align:center;
+}
